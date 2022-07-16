@@ -1,6 +1,9 @@
 *{
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 @font-face {
     font-family: 'Helvetica';
@@ -216,7 +219,23 @@ table   {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+#atalhoTopoPagina{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
 .form-group {
+
     font-family: "Roboto Regular";
     position: relative;
     display: flex;
