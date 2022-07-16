@@ -116,14 +116,8 @@ ul{
     text-align: center;
     
 }
-#listaDeCadastro{
-    height: 65vh;
-    background-color: whitesmoke;
-}
-#rodape{
-    height: 35vh;
-    background-image: url(imagens/rodape-desktop.jpg);
-}
+
+
 .tituloCadastro{
     font-family: 'Helvetica';
     color: whitesmoke;
@@ -157,7 +151,71 @@ ul{
 .chamadaDoPreenchimento{
     font-family: 'Roboto Regular';
 }
+#tituloListaDeCadastro{
+    margin-bottom: 3%;
+    font-family: 'Helvetica';
+    font-size: 3rem;
+    color: #29abe2;
+    font-weight: 50;
+}
+#listaDeCadastro{
+    height: 65vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tdInicial{
+    border-top: none;
+    border-left: none;
+}
+.tdInicial2{
+    border-right: none;
+    border-bottom: none;
+}
+#tabelaCadastros{
+    
+    width: 70%;
+    height: 50%;
+    
+}
+.tituloColunaTabela{
+    color: #012d51;
+    font-family: 'Roboto Regular';
+    font-size: 1.3rem;
+}
 
+td{
+    width: 14vw;
+    border: #29abe2 2px solid;
+    text-align: center;
+    border-radius: 20px;
+    color: #808080;
+    font-family: 'Helvetica';
+    
+}
+table   {
+    height: 100%; width: 100%; table-layout: fixed;
+    border-collapse: collapse;
+}
+
+
+
+#rodape{
+    height: 35vh;
+    background-image: url(imagens/rodape-desktop.jpg);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.elementoRodape{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .form-group {
     font-family: "Roboto Regular";
     position: relative;
@@ -259,5 +317,4 @@ ul{
       button:hover i {
         -webkit-transform: translateX(4px);
         transform: translateX(4px); }
-  
   
