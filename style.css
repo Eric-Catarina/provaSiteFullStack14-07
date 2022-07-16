@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('Fonts/HelveticaUltraLt_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('Fonts/Roboto-Regular_0.ttf') format('truetype');
+}
+:focus {
+    outline: none;
+}
+
+header{
+    padding-top: 30px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    color: wheat;
+    position: relative;
+    text-decoration: none;
+  }
+  .elemLista{
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .elemLista::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  .elemLista:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+#logo{
+    margin-left: 25%;
+}
+
+
+.lista{
+    margin-right: 25%;
+}
+    
+li{
+    margin-right: 35px;
+    color: whitesmoke;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.container_{
+    background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0.8) 0%,
+    rgba(0,0,0,0.2) 20%,
+    rgba(20,20,20,0.2) 80%,
+    rgba(20,20,20,1) 100%
+    ),
+    url("imagens/index-image.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+ul{
+    margin-top: 20px;
+    font-family: 'Helvetica';
+    font-size: 25px;
+    font-weight: lighter ;
+}
+.estagioProvaDeSelecao{
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 25%;
+    margin-top: 30vh;
+    font-family: 'Helvetica';
+    
+    font-weight:lighter;
+    color: rgb(239, 234, 234);
+    line-height: 1;
+    
+}
+.estagio{
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+
+}
+.prova{
+    font-size: 2.6rem;
+    
+}
+
+#cadastro{
+    height: 80vh;
+    background-color: #29abe2;
+    text-align: center;
+    
+}
+#listaDeCadastro{
+    height: 65vh;
+    background-color: whitesmoke;
+}
+#rodape{
+    height: 35vh;
+    background-image: url(imagens/rodape-desktop.jpg);
+}
+.tituloCadastro{
+    font-family: 'Helvetica';
+    color: whitesmoke;
+    padding-top: 10vh;
+    font-size: 3rem;
+    font-weight: 10;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+
+}
+#divTituloCadastro{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+#containerFormulario{
+    
+    background: #29abe2;
+    font-family: 'Roboto Regular';
+    height: 40%;
+    width: 40%;
+    margin-left: 29%;
+    margin-top: 5%;
+        
+}
+
+.chamadaDoPreenchimento{
+    font-family: 'Roboto Regular';
+}
+
+.form-group {
+    font-family: "Roboto Regular";
+    position: relative;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 5px; }
+    .form-group span {
+      font-size: 20px;
+      color: whitesmoke;
+      position: absolute;
+      top: 0px;
+      transition: all .2s ease;
+      transform-origin: 0 0;
+      cursor: text; }
+   
+  
+  .form-control {
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    color: whitesmoke;
+    display: flex;
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+    background: none;
+    font-family: "Helvetica Condensed Regular"; }
+    .form-control:focus, .form-control:valid {
+      border-bottom: 2px solid #fff; }
+      .form-control:focus + span, .form-control:valid + span {
+        transform: translateY(-30px) scale(0.9); }
+        .form-control:focus + span + .border, .form-control:valid + span + .border {
+          transform: scaleX(1); }
+  
+  textarea.form-control {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  
+  button {
+    text-align: center;
+    border: none;
+    width:55%;
+    height:30%;
+    font-size: 3rem;
+    font-weight: 50;
+    border: 2px solid #29abe2;
+    margin: auto;
+    margin-top: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    color: #29abe2;
+    background: #012d51;
+    text-transform: uppercase;
+    font-family: "Montserrat-SemiBold";
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+    button i {
+      margin-left: 10px;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+    button:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #021525;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+    button:hover {
+      border-color: transparent; }
+      button:hover:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); }
+      button:hover i {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px); }
+  
+  
