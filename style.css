@@ -394,9 +394,7 @@ table   {
                 cursor: pointer;
                 opacity: 0;
             }
-            .iconeHamburguer2{
-                display: none;
-            }
+            
             
             .hamburger{
                 position: absolute;
@@ -454,8 +452,9 @@ table   {
             /* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
             
             .toggler:checked ~ .menu{
-                width: 30%;
+                width: 40%;
             }
+            
             
             
             /* STYLING THE LIST :  */
@@ -474,14 +473,14 @@ table   {
             
             .menu > div > ul > li{
                 list-style: none;
-                padding: 0.5rem;
+                padding: 1rem;
             }
             
             .menu > div > ul > li > a{
-                color: black;
+                color: whitesmoke;
                 text-decoration: none;
                 font-size: 2rem;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family: 'Helvetica';
             }
             
             /* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
@@ -496,26 +495,38 @@ table   {
                 color: orange;
             }
 
-            .toggler:checked ~ .iconeHamburguer1{
-                display: none;
- 
-            }
+            
             .menu{
                 left:0;
                 top: 0;
                 position: fixed;
+                
+                
+            }
+            .opcoesMenu{
+                color: whitesmoke;
+            }
+            .hamburger{
+                width: 50;
+                height: 50;
+                margin-top: 15px;
+            }
+            .iconeHamburguer2{
+                display: none;
+            }
+            .toggler:checked ~ .hamburger > .iconeHamburguer1{
+                display: none;
+            }
+            .toggler:checked ~ .hamburger > .iconeHamburguer2{
+                display: block
+            }
+            .iconeHamburguer2{
                 z-index: 1;
             }
-            input[type="checkbox"] {
-                content: url('icones/hamburguer.svg');
-                display: block;
-                width: 200px;
-                height: 200px;
-                -webkit-appearance: none;
-            }
-            input[type="checkbox"]:checked {
-                content: url('icones/hamburguer-aberto0.svg');
-            }
+            
+           
+           
+           
 
 
 
