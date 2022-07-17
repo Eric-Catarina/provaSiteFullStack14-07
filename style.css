@@ -358,6 +358,9 @@ table   {
         .menu{
             display: none;
         }
+        #tabelaCadastrosMobile{
+            display: none;
+        }
 
 
         @media only screen and (max-width : 800px) {
@@ -477,20 +480,7 @@ table   {
         
             }
             
-            /* CREATING THE TOP AND BOTTOM LINES : 
-            TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
            
-            
-            /* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
-            
-            
-            
-            /* AND ROTATING THE TOP AND BOTTOM LINES :  */
-            
-            
-            
-            
-            /* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
             
             .menu{
                 background: #29abe2;
@@ -583,14 +573,76 @@ table   {
             #tituloCadastro{
                 font-size: 2rem;
             }
+            .tituloColunaTabela_{
+                font-size: 0.6rem;
+            }
             
+    
+        }
+        @media only screen and (max-width : 360px) {
+            #tabelaCadastrosMobile{
+                display: block;
+            }
+           #tituloListaDeCadastro{
+            white-space: initial;
+           }
+           #listaDeCadastro{
+            display: flex;
+            justify-content: center;
+           }
+           #tituloListaDeCadastro{
             
-            
-            
+            text-align: center;
+           }
            
+            table{
+            width: 98%;
+            height: 80%;
+           }
+           tr{
+            height: 60px;
+           }
+            td{
+                border-left: none;
+                border-right: none;
+                
+            }
+            #tabelaCadastros{
+                border: #29abe2 2px solid;
+            }
+            #tabelaCadastros{
+                display: none;
+            }
+            .nome{
+                white-space: nowrap;
+                padding-left: 20px;
+                font-size: 17px;
+            }
+          #tabelaCadastrosMobile{
+            margin-left: 2%;
+          }
+          .numero{
+            border: #808080 2px solid;
+          }
+          .numeroUm{
+            border: #29abe2 2px solid;
+          }
+          .numero, .numeroUm{
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-bottom: #29abe2 2px solid;
+          }
+            .tdInicial{
+                border-left: #29abe2 2px solid;
+            }
+            .tdInicial2{
+                border-bottom: #29abe2 2px solid;
+            }
+            .tdLateralDireita{
+                border-right: #29abe2 2px solid;
+            }
+            .tituloColunaTabela{
+                font-size: 20px;
+            }
            
-           
-
-
-
         }
