@@ -24,12 +24,10 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-right: 0;
     
 }
 a {
     color: wheat;
-    position: relative;
     text-decoration: none;
   }
   .elemLista{
@@ -57,18 +55,20 @@ a {
   }
 
 #logo{
-    margin-left: 25%;
+    
     height: 50px;
+    align-self: flex-start;
 }
 
 
 .lista{
-    margin-right: 25%;
+   margin-right: 20%;
 }
     
 li{
     margin-right: 35px;
     color: whitesmoke;
+    white-space: nowrap;
 }
 a{
     color: whitesmoke;
@@ -89,10 +89,14 @@ a{
     background-position: center;
 }
 ul{
-    margin-top: 20px;
     font-family: 'Helvetica';
     font-size: 25px;
     font-weight: lighter ;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
 }
 .estagioProvaDeSelecao{
     text-align: left;
@@ -330,6 +334,24 @@ table   {
         -webkit-transform: translateX(4px);
         transform: translateX(4px); }
   
+        .toggler{
+            display: none;
+        }
+        .iconeHamburguer1{
+            display: none;
+        }
+        .iconeHamburguer2{
+            display: none;
+        }
+        .opcoesMenu{
+            text-decoration: none;
+            display: none;
+        }
+        .menu{
+            display: none;
+        }
+
+
         @media only screen and (max-width : 800px) {
             .container_{
                 background-image: linear-gradient(
@@ -344,6 +366,24 @@ table   {
                 height: 100vh;
                 background-position: center;
             }
+            .toggler{
+                display: block;
+            }
+            .iconeHamburguer1{
+                display: block;
+            }
+            .iconeHamburguer2{
+                display: block;
+            }
+            .opcoesMenu{
+                text-decoration: none;
+                display: block;
+            }
+            .menu{
+                display: block;
+            }
+    
+            
             .estagioProvaDeSelecao{
                 float: left;
                 margin-top: 0;
@@ -358,11 +398,14 @@ table   {
                 display: none;
             }
             .navbar{
-                float: right;
-                justify-content: space-around;
+                
                 height: 70px;
                 padding-top: 30px;
+                padding-left: 30px;
+                justify-content: space-between;
+                flex-direction: row;
             }
+            
             header{
                 padding-top: 0;
             }
@@ -388,32 +431,29 @@ table   {
                 z-index:2;
                 height: 50px;
                 width: 50px;
-                position: absolute;
-                top: 0;
-                left: 0;
+                display: flex;
+               
                 cursor: pointer;
                 opacity: 0;
+                position: absolute;
+                margin-right: 80%;
+                
             }
             
             
             .hamburger{
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 40px;
-                width: 40px;
-                padding: 0.6rem;
-              
-              /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+                
+                
+                height: 50px;
+                width: 50px;
               
                 display: flex;
-                align-items: center;
-                justify-content: center;
+                position: absolute;
+                margin-right: 80%;
+
                 
             }
-            
-            /* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
-            
+        
             .hamburger > div{
                 position: relative;
                 top: 0;
@@ -422,6 +462,10 @@ table   {
                 height: 2px;
                 width: 60%;
                 transition: all  0.4s ease;
+            }
+            #logo{
+                margin-left: 60%;
+        
             }
             
             /* CREATING THE TOP AND BOTTOM LINES : 
@@ -442,7 +486,7 @@ table   {
             .menu{
                 background: #29abe2;
                 width: 0%;
-                height: 40vh;
+                height: 60vh;
               
               /* APPLYING TRANSITION TO THE MENU :  */
               
@@ -452,7 +496,7 @@ table   {
             /* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
             
             .toggler:checked ~ .menu{
-                width: 40%;
+                width: 65%;
             }
             
             
@@ -473,7 +517,9 @@ table   {
             
             .menu > div > ul > li{
                 list-style: none;
-                padding: 1rem;
+                padding: 2rem;
+                padding-top: 3rem;
+                padding-left: 3rem;
             }
             
             .menu > div > ul > li > a{
@@ -492,7 +538,7 @@ table   {
             }
             
             .toggler:checked ~ .menu > div > ul > li > a:hover{
-                color: orange;
+                
             }
 
             
@@ -506,11 +552,7 @@ table   {
             .opcoesMenu{
                 color: whitesmoke;
             }
-            .hamburger{
-                width: 50;
-                height: 50;
-                margin-top: 15px;
-            }
+            
             .iconeHamburguer2{
                 display: none;
             }
@@ -523,6 +565,7 @@ table   {
             .iconeHamburguer2{
                 z-index: 1;
             }
+            
             
            
            
