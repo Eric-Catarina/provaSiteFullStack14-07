@@ -5,7 +5,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 
     <link rel="stylesheet" href="style.css">
     <title>IN8 DEV</title>
@@ -15,21 +14,36 @@
     <div class="container_">
         <header>
             <nav class="navbar">
-
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <img class="iconeHamburguer1" src="icones/hamburguer.svg">
+                    <img class="iconeHamburguer2" src="icones/hamburguer-aberto0.svg">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <ul>
+                            <li><a href='#'>Home</a></li>
+                            <li><a href='#'>About</a></li>
+                            <li><a href='#'>Services</a></li>
+                            <li><a href='#'>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <a href="#" id="logo">
                     <img src="logo-in8-dev.svg" width="150">
                 </a>
                 <div class="lista">
                     <ul class="">
                         <li id="" style="display:inline">
-                            <a href="#cadastro" class="elemLista">Cadastro</a>
+                            <a href="#cadastro" class="elemLista liCima">Cadastro</a>
                         </li>
 
                         <li class="" style="display:inline">
-                            <a href="#listaDeCadastro" class="elemLista">Lista</a>
+                            <a href="#listaDeCadastro" class="elemLista liCima">Lista</a>
                         </li>
                         <li class="" style="display:inline">
-                            <a href="#rodape" class="elemLista">Sobre Mim</a>
+                            <a href="#rodape" class="elemLista liCima">Sobre Mim</a>
                         </li>
                     </ul>
                 </div>
@@ -70,7 +84,7 @@
                             <span>Telefone</span>
                             <span class="border"></span>
                         </label>
-                        <button>CADASTRAR
+                        <button class="buttonC">CADASTRAR
                             <i class=""></i>
                         </button>
                     </div>
@@ -129,7 +143,9 @@
     </div>
     <div id="rodape">
         <p class="elementoRodape">Éric Catarina Parreiras</p>
-        <p class="elementoRodape">2020954200@teiacoltec.org</p>
+        <p class="elementoRodape elemLista"><a
+                href="https://plaid-resonance-29a.notion.site/Hi-name-s-ric-Catarina-Parreiras-547b1b9755914e789f235c404a40e2de">2020954200@teiacoltec.org</a>
+        </p>
         <p class="elementoRodape">(31) 9 9937-8827</p>
         <p class="elementoRodape">COLTEC-UFMG</p>
 
