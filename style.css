@@ -156,6 +156,7 @@ ul{
     width: 40%;
     margin-left: 29%;
     margin-top: 5%;
+    
         
 }
 
@@ -209,6 +210,11 @@ td{
 table   {
     height: 100%; width: 100%; table-layout: fixed;
     border-collapse: collapse;
+}
+.containerButton{
+    display: flex;
+    
+    justify-content: center;
 }
 
 #rodape{
@@ -272,7 +278,7 @@ table   {
   .buttonC {
     text-align: center;
     border: none;
-    width:55%;
+    
     height:30%;
     font-size: 3rem;
     font-weight: 50;
@@ -283,6 +289,7 @@ table   {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
     padding: 0;
     background: none;
     color: #29abe2;
@@ -291,7 +298,7 @@ table   {
     font-family: "Montserrat-SemiBold";
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    position: relative;
+    
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -308,6 +315,7 @@ table   {
       transition-timing-function: ease-out; }
     .buttonC:before {
       content: "";
+      
       position: absolute;
       z-index: -1;
       top: 0;
@@ -386,7 +394,8 @@ table   {
             
             .estagioProvaDeSelecao{
                 float: left;
-                margin-top: 0;
+                margin-top: 30%;
+                margin-left: 15%;
             }
             .estagio{
                 font-size: 4.5rem;
@@ -537,9 +546,7 @@ table   {
                 visibility: visible;
             }
             
-            .toggler:checked ~ .menu > div > ul > li > a:hover{
-                
-            }
+
 
             
             .menu{
@@ -565,6 +572,19 @@ table   {
             .iconeHamburguer2{
                 z-index: 1;
             }
+            .buttonC{
+                border: 0;
+                font-size: 2.8rem;
+            }
+            #tituloListaDeCadastro{
+                white-space: nowrap;
+                font-size: 2rem;
+            }
+            #tituloCadastro{
+                font-size: 2rem;
+            }
+            
+            
             
             
            
