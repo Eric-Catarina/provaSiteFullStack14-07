@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -9,33 +10,38 @@ html{
     font-family: 'Helvetica';
     src: url('Fonts/HelveticaUltraLt_0.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Roboto Regular';
     src: url('Fonts/Roboto-Regular_0.ttf') format('truetype');
 }
+
 :focus {
     outline: none;
 }
 
-header{
+header {
     padding-top: 30px;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    
+
 }
+
 a {
     color: wheat;
     text-decoration: none;
-  }
-  .elemLista{
+}
+
+.elemLista {
     position: relative;
     text-decoration: none;
-  }
-  
-  .elemLista::before {
+}
+
+.elemLista::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -47,89 +53,92 @@ a {
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
-  }
-  
-  .elemLista:hover::before {
+}
+
+.elemLista:hover::before {
     transform-origin: left;
     transform: scaleX(1);
-  }
+}
 
-#logo{
-    
+#logo {
+
     height: 50px;
     align-self: flex-start;
 }
 
 
-.lista{
-   margin-right: 20%;
+.lista {
+    margin-right: 20%;
 }
-    
-li{
+
+li {
     margin-right: 35px;
     color: whitesmoke;
     white-space: nowrap;
 }
-a{
+
+a {
     color: whitesmoke;
     text-decoration: none;
 }
 
-.container_{
-    background-image: linear-gradient(
-    to bottom, 
-    rgba(0,0,0,0.8) 0%,
-    rgba(0,0,0,0.2) 20%,
-    rgba(20,20,20,0.2) 80%,
-    rgba(20,20,20,1) 100%
-    ),
-    url("imagens/index-image.jpg");
+.container_ {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.2) 20%,
+            rgba(20, 20, 20, 0.2) 80%,
+            rgba(20, 20, 20, 1) 100%),
+        url("imagens/index-image.jpg");
     background-size: cover;
     height: 100vh;
     background-position: center;
 }
-ul{
+
+ul {
     font-family: 'Helvetica';
     font-size: 25px;
-    font-weight: lighter ;
+    font-weight: lighter;
     padding-left: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
+
 }
-.estagioProvaDeSelecao{
+
+.estagioProvaDeSelecao {
     text-align: left;
     vertical-align: middle;
     margin-left: 25%;
     margin-top: 30vh;
     font-family: 'Helvetica';
-    
-    font-weight:lighter;
+
+    font-weight: lighter;
     color: rgb(239, 234, 234);
     line-height: 1;
-    
+
 }
-.estagio{
+
+.estagio {
     font-size: 6rem;
     font-weight: 100;
     margin-bottom: 20px;
 
 }
-.prova{
+
+.prova {
     font-size: 2.6rem;
-    
+
 }
 
-#cadastro{
+#cadastro {
     height: 80vh;
     background-color: #29abe2;
     text-align: center;
-    
+
 }
 
 
-.tituloCadastro{
+.tituloCadastro {
     font-family: 'Helvetica';
     color: whitesmoke;
     padding-top: 10vh;
@@ -139,38 +148,42 @@ ul{
     justify-content: center;
     text-align: center;
     display: flex;
-    
+
 
 }
-#divTituloCadastro{
+
+#divTituloCadastro {
     align-items: center;
     justify-content: center;
     text-align: center;
     display: flex;
 }
-#containerFormulario{
-    
+
+#containerFormulario {
+
     background: #29abe2;
     font-family: 'Roboto Regular';
     height: 40%;
     width: 40%;
     margin-left: 29%;
     margin-top: 5%;
-    
-        
+
+
 }
 
-.chamadaDoPreenchimento{
+.chamadaDoPreenchimento {
     font-family: 'Roboto Regular';
 }
-#tituloListaDeCadastro{
+
+#tituloListaDeCadastro {
     margin-bottom: 3%;
     font-family: 'Helvetica';
     font-size: 3rem;
     color: #29abe2;
     font-weight: 50;
 }
-#listaDeCadastro{
+
+#listaDeCadastro {
     height: 65vh;
     background-color: whitesmoke;
     display: flex;
@@ -178,72 +191,79 @@ ul{
     justify-content: center;
     align-items: center;
 }
-.tdInicial{
+
+.tdInicial {
     border-top: none;
     border-left: none;
 }
-.tdInicial2{
+
+.tdInicial2 {
     border-right: none;
     border-bottom: none;
 }
-#tabelaCadastros{
-    
+
+#tabelaCadastros {
+
     width: 70%;
     height: 50%;
-    
+
 }
-.tituloColunaTabela{
+
+.tituloColunaTabela {
     color: #012d51;
     font-family: 'Roboto Regular';
     font-size: 1.3rem;
 }
 
-td{
+td {
     width: 14vw;
     border: #29abe2 2px solid;
     text-align: center;
     border-radius: 20px;
     color: #808080;
     font-family: 'Helvetica';
-    
+
 }
-table   {
-    height: 100%; width: 100%; table-layout: fixed;
+
+table {
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
 }
-.containerButton{
+
+.containerButton {
     display: flex;
-    
+
     justify-content: center;
 }
 
-#rodape{
+#rodape {
     height: 35vh;
-    
+
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(0,0,0,0.8) 0%,
-        rgba(0,0,0,0.2) 20%,
-        rgba(20,20,20,0.2) 80%,
-        rgba(20,20,20,1) 100%
-        ),
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.2) 20%,
+            rgba(20, 20, 20, 0.2) 80%,
+            rgba(20, 20, 20, 1) 100%),
         url("imagens/rodape-desktop.jpg");
-        
-       
-        
-    
+
+
+
+
 }
-.elementoRodape{
+
+.elementoRodape {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-#atalhoTopoPagina{
+#atalhoTopoPagina {
     width: 60px;
     height: 60px;
 }
@@ -254,18 +274,21 @@ table   {
     position: relative;
     display: flex;
     margin-bottom: 40px;
-    margin-top: 5px; }
-    .form-group span {
-      font-size: 20px;
-      color: whitesmoke;
-      position: absolute;
-      top: 0px;
-      transition: all .2s ease;
-      transform-origin: 0 0;
-      cursor: text; }
-   
-  
-  .form-control {
+    margin-top: 5px;
+}
+
+.form-group span {
+    font-size: 20px;
+    color: whitesmoke;
+    position: absolute;
+    top: 0px;
+    transition: all .2s ease;
+    transform-origin: 0 0;
+    cursor: text;
+}
+
+
+.form-control {
     border: none;
     border-bottom: 1px solid whitesmoke;
     color: whitesmoke;
@@ -274,23 +297,34 @@ table   {
     height: 25%;
     font-size: 20px;
     background: none;
-    font-family: "Helvetica Condensed Regular"; }
-    .form-control:focus, .form-control:valid {
-      border-bottom: 2px solid #fff; }
-      .form-control:focus + span, .form-control:valid + span {
-        transform: translateY(-30px) scale(0.9); }
-        .form-control:focus + span + .border, .form-control:valid + span + .border {
-          transform: scaleX(1); }
-  
-  textarea.form-control {
+    font-family: "Helvetica Condensed Regular";
+}
+
+.form-control:focus,
+.form-control:valid {
+    border-bottom: 2px solid #fff;
+}
+
+.form-control:focus+span,
+.form-control:valid+span {
+    transform: translateY(-30px) scale(0.9);
+}
+
+.form-control:focus+span+.border,
+.form-control:valid+span+.border {
+    transform: scaleX(1);
+}
+
+textarea.form-control {
     padding-top: 10px;
-    padding-bottom: 10px; }
-  
-  .buttonC {
+    padding-bottom: 10px;
+}
+
+.buttonC {
     text-align: center;
     border: none;
-    
-    height:30%;
+
+    height: 30%;
     font-size: 3rem;
     font-weight: 50;
     border: 2px solid #29abe2;
@@ -309,441 +343,508 @@ table   {
     font-family: "Montserrat-SemiBold";
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    
+
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s; }
-    .buttonC i {
-      margin-left: 10px;
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-      -webkit-transition-duration: 0.1s;
-      transition-duration: 0.1s;
-      -webkit-transition-property: transform;
-      transition-property: transform;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out; }
-    .buttonC:before {
-      content: "";
-      
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: #021525;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transform-origin: 0 50%;
-      transform-origin: 0 50%;
-      -webkit-transition-property: transform;
-      transition-property: transform;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out; }
-    .buttonC:hover {
-      border-color: transparent; }
-      .buttonC:hover:before {
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1); }
-      .buttonC:hover i {
-        -webkit-transform: translateX(4px);
-        transform: translateX(4px); }
+    transition-duration: 0.3s;
+}
+
+.buttonC i {
+    margin-left: 10px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.buttonC:before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #021525;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.buttonC:hover {
+    border-color: transparent;
+}
+
+.buttonC:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.buttonC:hover i {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+.toggler {
+    display: none;
+}
+
+.iconeHamburguer1 {
+    display: none;
+}
+
+.iconeHamburguer2 {
+    display: none;
+}
+
+.opcoesMenu {
+    text-decoration: none;
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+#tabelaCadastrosMobile {
+    display: none;
+}
+
+
+@media only screen and (max-width : 800px) {
+    #tabelaCadastrosMobile {
+        display: block;
+    }
+
+    #tabelaCadastros {
+        display: none;
+    }
+
+    .container_ {
+        background-image: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.8) 0%,
+                rgba(0, 0, 0, 0.2) 20%,
+                rgba(20, 20, 20, 0.2) 80%,
+                rgba(20, 20, 20, 1) 100%),
+            url("imagens/index-image-mobile.jpg");
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .toggler {
+        display: block;
+    }
+
+    .iconeHamburguer1 {
+        display: block;
+    }
+
+    .iconeHamburguer2 {
+        display: block;
+    }
+
+    .opcoesMenu {
+        text-decoration: none;
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+
+    .estagioProvaDeSelecao {
+        float: left;
+        margin-top: 30%;
+        margin-left: 15%;
+    }
+
+    .estagio {
+        font-size: 4.5rem;
+    }
+
+    .prova {
+        font-size: 1.9rem;
+    }
+
+    .liCima {
+        display: none;
+    }
+
+    .navbar {
+
+        height: 70px;
+        padding-top: 30px;
+        padding-left: 30px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    header {
+        padding-top: 0;
+    }
+
+    .lista {
+        display: none;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: #333;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .toggler {
+        
+        z-index: 2;
+        height: 50px;
+        width: 50px;
+        display: flex;
+
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+        margin-right: 80%;
+
+    }
+
+
+    .hamburger {
+
+
+        height: 50px;
+        width: 50px;
+
+        display: flex;
+        position: absolute;
+        margin-right: 80%;
+
+
+    }
+
+    .hamburger>div {
+        position: relative;
+        top: 0;
+        left: 0;
+        background: white;
+        height: 2px;
+        width: 60%;
+        transition: all 0.4s ease;
+    }
+
+    #logo {
+        margin-left: 60%;
+
+    }
+
+
+
+    .menu {
+        background: #29abe2;
+        width: 0%;
+        height: 60vh;
+
+       
+
+        transition: all 0.4s ease;
+    }
+
+
+    .toggler:checked~.menu {
+        width: 65%;
+    }
+
+
+
   
-        .toggler{
-            display: none;
-        }
-        .iconeHamburguer1{
-            display: none;
-        }
-        .iconeHamburguer2{
-            display: none;
-        }
-        .opcoesMenu{
-            text-decoration: none;
-            display: none;
-        }
-        .menu{
-            display: none;
-        }
-        #tabelaCadastrosMobile{
-            display: none;
-        }
 
+    .menu>div>ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        padding-left: 10px;
 
-        @media only screen and (max-width : 800px) {
-            #tabelaCadastrosMobile{
-                display: block;
-            }
-            #tabelaCadastros{
-                display: none;
-            }
-            .container_{
-                background-image: linear-gradient(
-                to bottom, 
-                rgba(0,0,0,0.8) 0%,
-                rgba(0,0,0,0.2) 20%,
-                rgba(20,20,20,0.2) 80%,
-                rgba(20,20,20,1) 100%
-                ),
-                url("imagens/index-image-mobile.jpg");
-                background-size: cover;
-                height: 100vh;
-                background-position: center;
-            }
-            .toggler{
-                display: block;
-            }
-            .iconeHamburguer1{
-                display: block;
-            }
-            .iconeHamburguer2{
-                display: block;
-            }
-            .opcoesMenu{
-                text-decoration: none;
-                display: block;
-            }
-            .menu{
-                display: block;
-            }
     
-            
-            .estagioProvaDeSelecao{
-                float: left;
-                margin-top: 30%;
-                margin-left: 15%;
-            }
-            .estagio{
-                font-size: 4.5rem;
-            }
-            .prova{
-                font-size: 1.9rem;
-            }
-            .liCima{
-                display: none;
-            }
-            .navbar{
-                
-                height: 70px;
-                padding-top: 30px;
-                padding-left: 30px;
-                justify-content: space-between;
-                flex-direction: row;
-            }
-            
-            header{
-                padding-top: 0;
-            }
-            
-            .lista{
-                display: none;
-            }
-            
 
-            *{
-                margin: 0;
-                padding: 0;
-            }
-            
-            body{
-                background: #333;
-                height: 100vh;
-                width: 100vw;
-            }
-            
-            .toggler{
-              /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
-                z-index:2;
-                height: 50px;
-                width: 50px;
-                display: flex;
-               
-                cursor: pointer;
-                opacity: 0;
-                position: absolute;
-                margin-right: 80%;
-                
-            }
-            
-            
-            .hamburger{
-                
-                
-                height: 50px;
-                width: 50px;
-              
-                display: flex;
-                position: absolute;
-                margin-right: 80%;
+        visibility: hidden;
+    }
 
-                
-            }
-        
-            .hamburger > div{
-                position: relative;
-                top: 0;
-                left: 0;
-                background: white;
-                height: 2px;
-                width: 60%;
-                transition: all  0.4s ease;
-            }
-            #logo{
-                margin-left: 60%;
-        
-            }
-            
-           
-            
-            .menu{
-                background: #29abe2;
-                width: 0%;
-                height: 60vh;
-              
-              /* APPLYING TRANSITION TO THE MENU :  */
-              
-                transition: all 0.4s ease;
-            }
-            
-            /* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
-            
-            .toggler:checked ~ .menu{
-                width: 65%;
-            }
-            
-            
-            
-            /* STYLING THE LIST :  */
-            
-            .menu >  div > ul{
-                display: flex;
-                flex-direction: column;
-                position: fixed;
-                top: 70px;
-                padding-left: 10px;
-              
-              /* HIDDEN INITIALLY  :  */
-              
-                visibility: hidden;
-            }
-            
-            .menu > div > ul > li{
-                list-style: none;
-                padding: 2rem;
-                padding-top: 3rem;
-                padding-left: 3rem;
-            }
-            
-            .menu > div > ul > li > a{
-                color: whitesmoke;
-                text-decoration: none;
-                font-size: 2rem;
-                font-family: 'Helvetica';
-            }
-            
-            /* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
-            
-            .toggler:checked ~ .menu > div > ul{
-                transition: visibility 0.4s ease;
-                transition-delay: 0.1s;
-                visibility: visible;
-            }
-            
+    .menu>div>ul>li {
+        list-style: none;
+        padding: 2rem;
+        padding-top: 3rem;
+        padding-left: 3rem;
+    }
+
+    .menu>div>ul>li>a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 2rem;
+        font-family: 'Helvetica';
+    }
 
 
-            
-            .menu{
-                left:0;
-                top: 0;
-                position: fixed;
-                
-                
-            }
-            .opcoesMenu{
-                color: whitesmoke;
-            }
-            
-            .iconeHamburguer2{
-                display: none;
-            }
-            .toggler:checked ~ .hamburger > .iconeHamburguer1{
-                display: none;
-            }
-            .toggler:checked ~ .hamburger > .iconeHamburguer2{
-                display: block
-            }
-            .iconeHamburguer2{
-                z-index: 1;
-            }
-            .buttonC{
-                border: 0;
-                font-size: 2.8rem;
-            }
-            #tituloListaDeCadastro{
-                white-space: nowrap;
-                font-size: 2rem;
-            }
-            #tituloCadastro{
-                font-size: 2rem;
-            }
-            .tituloColunaTabela_{
-                font-size: 0.6rem;
-            }
-            table{
-                width: 98%;
-                height: 80%;
-               }
-               tr{
-                height: 60px;
-               }
-                td{
-                    border-left: none;
-                    border-right: none;
-                    
-                }
-                #tabelaCadastros{
-                    border: #29abe2 2px solid;
-                }
-                #tabelaCadastros{
-                    display: none;
-                }
-                .nome{
-                    white-space: nowrap;
-                    padding-left: 20px;
-                    font-size: 17px;
-                }
-              #tabelaCadastrosMobile{
-                margin-left: 2%;
-              }
-              .numero{
-                border: #808080 2px solid;
-              }
-              .numeroUm{
-                border: #29abe2 2px solid;
-              }
-              .numero, .numeroUm{
-                font-size: 1.5rem;
-                cursor: pointer;
-                border-bottom: #29abe2 2px solid;
-              }
-                .tdInicial{
-                    border-left: #29abe2 2px solid;
-                }
-                .tdInicial2{
-                    border-bottom: #29abe2 2px solid;
-                }
-                .tdLateralDireita{
-                    border-right: #29abe2 2px solid;
-                }
-                .tituloColunaTabela{
-                    font-size: 20px;
-                }
-                #rodape{
-                    background-image: linear-gradient(
-                        to bottom, 
-                        rgba(0,0,0,0.8) 0%,
-                        rgba(0,0,0,0.2) 20%,
-                        rgba(20,20,20,0.2) 80%,
-                        rgba(20,20,20,1) 100%
-                        ),
-                        url("imagens/rodape-mobile.jpg");
-                        background-size: cover;
-                      
-                        background-position: center;
-                    
-                }
-            
 
-
-        }
+    .toggler:checked~.menu>div>ul {
+        transition: visibility 0.4s ease;
+        transition-delay: 0.1s;
+        visibility: visible;
+    }
 
 
 
 
-        @media only screen and (max-width : 360px) {
-            #tabelaCadastrosMobile{
-                display: block;
-            }
-           #tituloListaDeCadastro{
-            white-space: initial;
-           }
-           #listaDeCadastro{
-            display: flex;
-            justify-content: center;
-           }
-           #tituloListaDeCadastro{
-            
-            text-align: center;
-           }
-           
-            table{
-            width: 98%;
-            height: 80%;
-           }
-           tr{
-            height: 60px;
-           }
-            td{
-                border-left: none;
-                border-right: none;
-                
-            }
-            #tabelaCadastros{
-                border: #29abe2 2px solid;
-            }
-            #tabelaCadastros{
-                display: none;
-            }
-            .nome{
-                white-space: nowrap;
-                padding-left: 20px;
-                font-size: 17px;
-            }
-          #tabelaCadastrosMobile{
-            margin-left: 2%;
-          }
-          .numero{
-            border: #808080 2px solid;
-          }
-          .numeroUm{
-            border: #29abe2 2px solid;
-          }
-          .numero, .numeroUm{
-            font-size: 1.5rem;
-            cursor: pointer;
-            border-bottom: #29abe2 2px solid;
-          }
-            .tdInicial{
-                border-left: #29abe2 2px solid;
-            }
-            .tdInicial2{
-                border-bottom: #29abe2 2px solid;
-            }
-            .tdLateralDireita{
-                border-right: #29abe2 2px solid;
-            }
-            .tituloColunaTabela{
-                font-size: 20px;
-            }
-            #logo{
-                margin-left: 30%;
-            }
-            .estagioProvaDeSelecao{
-                text-align: center;
-                margin-left: 7%;
-            }
+    .menu {
+        left: 0;
+        top: 0;
+        position: fixed;
 
-            .estagio{
-                font-size: 3.4rem;
-                margin-bottom: 0;
-            }
-            .prova{
-                font-size: 1.4rem;
-            }
-           
-           
-        }
+
+    }
+
+    .opcoesMenu {
+        color: whitesmoke;
+    }
+
+    .iconeHamburguer2 {
+        display: none;
+    }
+
+    .toggler:checked~.hamburger>.iconeHamburguer1 {
+        display: none;
+    }
+
+    .toggler:checked~.hamburger>.iconeHamburguer2 {
+        display: block
+    }
+
+    .iconeHamburguer2 {
+        z-index: 1;
+    }
+
+    .buttonC {
+        border: 0;
+        font-size: 2.8rem;
+    }
+
+    #tituloListaDeCadastro {
+        white-space: nowrap;
+        font-size: 2rem;
+    }
+
+    #tituloCadastro {
+        font-size: 2rem;
+    }
+
+    .tituloColunaTabela_ {
+        font-size: 0.6rem;
+    }
+
+    table {
+        width: 98%;
+        height: 80%;
+    }
+
+    tr {
+        height: 60px;
+    }
+
+    td {
+        border-left: none;
+        border-right: none;
+
+    }
+
+    #tabelaCadastros {
+        border: #29abe2 2px solid;
+    }
+
+    #tabelaCadastros {
+        display: none;
+    }
+
+    .nome {
+        white-space: nowrap;
+        padding-left: 20px;
+        font-size: 17px;
+    }
+
+    #tabelaCadastrosMobile {
+        margin-left: 2%;
+    }
+
+    .numero {
+        border: #808080 2px solid;
+    }
+
+    .numeroUm {
+        border: #29abe2 2px solid;
+    }
+
+    .numero,
+    .numeroUm {
+        font-size: 1.5rem;
+        cursor: pointer;
+        border-bottom: #29abe2 2px solid;
+    }
+
+    .tdInicial {
+        border-left: #29abe2 2px solid;
+    }
+
+    .tdInicial2 {
+        border-bottom: #29abe2 2px solid;
+    }
+
+    .tdLateralDireita {
+        border-right: #29abe2 2px solid;
+    }
+
+    .tituloColunaTabela {
+        font-size: 20px;
+    }
+
+    #rodape {
+        background-image: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0.8) 0%,
+                rgba(0, 0, 0, 0.2) 20%,
+                rgba(20, 20, 20, 0.2) 80%,
+                rgba(20, 20, 20, 1) 100%),
+            url("imagens/rodape-mobile.jpg");
+        background-size: cover;
+
+        background-position: center;
+
+    }
+
+
+
+}
+
+
+
+
+@media only screen and (max-width : 360px) {
+    #tabelaCadastrosMobile {
+        display: block;
+    }
+
+    #tituloListaDeCadastro {
+        white-space: initial;
+    }
+
+    #listaDeCadastro {
+        display: flex;
+        justify-content: center;
+    }
+
+    #tituloListaDeCadastro {
+
+        text-align: center;
+    }
+
+    table {
+        width: 98%;
+        height: 80%;
+    }
+
+    tr {
+        height: 60px;
+    }
+
+    td {
+        border-left: none;
+        border-right: none;
+
+    }
+
+    #tabelaCadastros {
+        border: #29abe2 2px solid;
+    }
+
+    #tabelaCadastros {
+        display: none;
+    }
+
+    .nome {
+        white-space: nowrap;
+        padding-left: 20px;
+        font-size: 17px;
+    }
+
+    #tabelaCadastrosMobile {
+        margin-left: 2%;
+    }
+
+    .numero {
+        border: #808080 2px solid;
+    }
+
+    .numeroUm {
+        border: #29abe2 2px solid;
+    }
+
+    .numero,
+    .numeroUm {
+        font-size: 1.5rem;
+        cursor: pointer;
+        border-bottom: #29abe2 2px solid;
+    }
+
+    .tdInicial {
+        border-left: #29abe2 2px solid;
+    }
+
+    .tdInicial2 {
+        border-bottom: #29abe2 2px solid;
+    }
+
+    .tdLateralDireita {
+        border-right: #29abe2 2px solid;
+    }
+
+    .tituloColunaTabela {
+        font-size: 20px;
+    }
+
+    #logo {
+        margin-left: 30%;
+    }
+
+    .estagioProvaDeSelecao {
+        text-align: center;
+        margin-left: 7%;
+    }
+
+    .estagio {
+        font-size: 3.4rem;
+        margin-bottom: 0;
+    }
+
+    .prova {
+        font-size: 1.4rem;
+    }
+
+
+}
