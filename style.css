@@ -219,12 +219,23 @@ table   {
 
 #rodape{
     height: 35vh;
-    background-image: url(imagens/rodape-desktop.jpg);
+    
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0,0,0,0.8) 0%,
+        rgba(0,0,0,0.2) 20%,
+        rgba(20,20,20,0.2) 80%,
+        rgba(20,20,20,1) 100%
+        ),
+        url("imagens/rodape-desktop.jpg");
+        
+       
+        
     
 }
 .elementoRodape{
@@ -364,6 +375,12 @@ table   {
 
 
         @media only screen and (max-width : 800px) {
+            #tabelaCadastrosMobile{
+                display: block;
+            }
+            #tabelaCadastros{
+                display: none;
+            }
             .container_{
                 background-image: linear-gradient(
                 to bottom, 
@@ -576,9 +593,77 @@ table   {
             .tituloColunaTabela_{
                 font-size: 0.6rem;
             }
+            table{
+                width: 98%;
+                height: 80%;
+               }
+               tr{
+                height: 60px;
+               }
+                td{
+                    border-left: none;
+                    border-right: none;
+                    
+                }
+                #tabelaCadastros{
+                    border: #29abe2 2px solid;
+                }
+                #tabelaCadastros{
+                    display: none;
+                }
+                .nome{
+                    white-space: nowrap;
+                    padding-left: 20px;
+                    font-size: 17px;
+                }
+              #tabelaCadastrosMobile{
+                margin-left: 2%;
+              }
+              .numero{
+                border: #808080 2px solid;
+              }
+              .numeroUm{
+                border: #29abe2 2px solid;
+              }
+              .numero, .numeroUm{
+                font-size: 1.5rem;
+                cursor: pointer;
+                border-bottom: #29abe2 2px solid;
+              }
+                .tdInicial{
+                    border-left: #29abe2 2px solid;
+                }
+                .tdInicial2{
+                    border-bottom: #29abe2 2px solid;
+                }
+                .tdLateralDireita{
+                    border-right: #29abe2 2px solid;
+                }
+                .tituloColunaTabela{
+                    font-size: 20px;
+                }
+                #rodape{
+                    background-image: linear-gradient(
+                        to bottom, 
+                        rgba(0,0,0,0.8) 0%,
+                        rgba(0,0,0,0.2) 20%,
+                        rgba(20,20,20,0.2) 80%,
+                        rgba(20,20,20,1) 100%
+                        ),
+                        url("imagens/rodape-mobile.jpg");
+                        background-size: cover;
+                      
+                        background-position: center;
+                    
+                }
             
-    
+
+
         }
+
+
+
+
         @media only screen and (max-width : 360px) {
             #tabelaCadastrosMobile{
                 display: block;
@@ -644,5 +729,21 @@ table   {
             .tituloColunaTabela{
                 font-size: 20px;
             }
+            #logo{
+                margin-left: 30%;
+            }
+            .estagioProvaDeSelecao{
+                text-align: center;
+                margin-left: 7%;
+            }
+
+            .estagio{
+                font-size: 3.4rem;
+                margin-bottom: 0;
+            }
+            .prova{
+                font-size: 1.4rem;
+            }
+           
            
         }
